@@ -151,8 +151,8 @@ function App() {
           <h1 style={{ color: '#2d3748', marginTop: '0', marginBottom: '30px', fontSize: '28px', fontWeight: '800', letterSpacing: '-1px' }}>
             WELCOME TO GROCERY LIST MANAGER 🛒
           </h1>
-          <input type="text" placeholder="Email" value={username} onChange={(e) => setUsername(e.target.value)} style={{ display: 'block', width: '280px', padding: '15px', marginBottom: '15px', borderRadius: '12px', border: '2px solid #e2e8f0', outline: 'none', fontSize: '16px', background: '#f7fafc' }} />
-          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} style={{ display: 'block', width: '280px', padding: '15px', marginBottom: '25px', borderRadius: '12px', border: '2px solid #e2e8f0', outline: 'none', fontSize: '16px', background: '#f7fafc' }} />
+          <input type="text" placeholder="Email" value={username} onChange={(e) => setUsername(e.target.value)} style={{ display: 'block', width: '280px', padding: '15px', marginBottom: '15px', borderRadius: '12px', border: '2px solid #e2e8f0', outline: 'none', fontSize: '16px', background: '#f7fafc',color: '#2d3748' }} />
+          <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} style={{ display: 'block', width: '280px', padding: '15px', marginBottom: '25px', borderRadius: '12px', border: '2px solid #e2e8f0', outline: 'none', fontSize: '16px', background: '#f7fafc',color: '#2d3748' }} />
 
           <button onClick={handleLogin} style={{ width: '100%', padding: '15px', background: 'linear-gradient(to right, #4facfe 0%, #00f2fe 100%)', color: 'white', border: 'none', borderRadius: '12px', cursor: 'pointer', fontWeight: 'bold', fontSize: '16px', boxShadow: '0 4px 15px rgba(0, 242, 254, 0.4)' }}>Login Securely</button>
           <button onClick={handleRegister} style={{ width: '100%', padding: '15px', background: '#edf2f7', color: '#4a5568', border: 'none', borderRadius: '12px', cursor: 'pointer', fontWeight: 'bold', fontSize: '16px', marginTop: '10px' }}>Register New Account</button>
@@ -248,7 +248,7 @@ function App() {
             
             <div style={{ flex: '2', minWidth: '220px' }}>
               <label style={{ fontSize: '13px', color: '#a0aec0', display: 'block', marginBottom: '8px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>Item Name</label>
-              <input type="text" placeholder="What do you need?" value={newName} onChange={(e) => setNewName(e.target.value)} style={{ width: '100%', padding: '14px', boxSizing: 'border-box', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px' }} />
+              <input type="text" placeholder="What do you need?" value={newName} onChange={(e) => setNewName(e.target.value)} style={{ width: '100%', padding: '14px', boxSizing: 'border-box', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px',color: '#2d3748' }} />
             </div>
             
             <div style={{ flex: '1', minWidth: '160px' }}>
