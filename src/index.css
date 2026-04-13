@@ -109,8 +109,8 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
-// Makes all buttons "pop" 
-button:active {
+/* Makes all buttons "pop" */
+ button:active {
   transform: scale(0.95) !important;
   transition: transform 0.1s ease !important;
 }
