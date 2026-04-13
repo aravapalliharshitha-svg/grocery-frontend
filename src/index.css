@@ -109,3 +109,13 @@ code {
   padding: 4px 8px;
   background: var(--code-bg);
 }
+// Makes all buttons "pop" 
+button:active {
+  transform: scale(0.95) !important;
+  transition: transform 0.1s ease !important;
+}
+
+/* Adds a smooth transition when you hover over them */
+button {
+  transition: all 0.2s ease;
+}
