@@ -72,7 +72,7 @@ function App() {
   try {
     const currentToken = localStorage.getItem('token');
     
-    // Keeping your fresh config logic
+    
     const freshConfig = { 
       headers: { 'x-auth-token': currentToken } 
     };
@@ -105,7 +105,7 @@ function App() {
 
     try {
       if (editingId) {
-        // FIXED: URL changed for Updating an item
+        // FIXED: URL 
         const res = await axios.put(`https://grocery-api-bkjp.onrender.com/api/items/${editingId}`, itemData, config);
         setItems(items.map(i => i._id === editingId ? res.data : i));
         setEditingId(null);
@@ -253,7 +253,7 @@ function App() {
             
             <div style={{ flex: '1', minWidth: '160px' }}>
               <label style={{ fontSize: '13px', color: '#a0aec0', display: 'block', marginBottom: '8px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>Category</label>
-              <select value={newCategory} onChange={(e) => setNewCategory(e.target.value)} style={{ width: '100%', padding: '14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px' }}>
+              <select value={newCategory} onChange={(e) => setNewCategory(e.target.value)} style={{ width: '100%', padding: '14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px',color: '#2d3748' }}>
                 <option value="" disabled>Select</option>
                 <option value="Dairy">Dairy</option>
                 <option value="Vegetables">Vegetables</option>
@@ -268,8 +268,8 @@ function App() {
             <div style={{ flex: '1', minWidth: '220px' }}>
               <label style={{ fontSize: '13px', color: '#a0aec0', display: 'block', marginBottom: '8px', fontWeight: 'bold', textTransform: 'uppercase', letterSpacing: '1px' }}>Quantity</label>
               <div style={{ display: 'flex', gap: '10px' }}>
-                <input type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)} style={{ width: '70px', padding: '14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px' }} />
-                <select value={unit} onChange={(e) => setUnit(e.target.value)} style={{ flex: 1, padding: '14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px' }}>
+                <input type="number" value={quantity} onChange={(e) => setQuantity(e.target.value)} style={{ width: '70px', padding: '14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px',color: '#2d3748' }} />
+                <select value={unit} onChange={(e) => setUnit(e.target.value)} style={{ flex: 1, padding: '14px', borderRadius: '12px', border: '2px solid #e2e8f0', background: '#f7fafc', outline: 'none', fontSize: '15px',color: '#2d3748' }}>
                   <option value="Pieces">Pieces</option>
                   <option value="Packets">Packets</option>
                   <option value="Kilograms">Kilograms</option>
